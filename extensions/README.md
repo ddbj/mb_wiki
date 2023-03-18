@@ -10,10 +10,10 @@
 
 # Installation
 ```
-$ git clone git clone https://github.com/ddbj/mb_wiki.git  ### download extensions
+$ git clone https://github.com/ddbj/mb_wiki.git  ### download extensions
 $ mv mb_wiki/extensions/* /WIKI_HOME/extensions/
-$ wget jpgraph.tgz      ### download jpgraph
-$ tar zxf jpgraph.tgz
+### download jpgraph
+$ tar zxf jpgraph-X.X.X.tgz
 $ mv jpgraph-X.X.X/ /DOCUMENT_ROOT/jpgraph/
 $ cd /WIKI_HOME/        ### settings
 $ vi LocalSettings.php  ### add the following lines
