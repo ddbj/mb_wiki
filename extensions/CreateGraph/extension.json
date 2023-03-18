@@ -1,0 +1,29 @@
+{
+	"name": "CreateGraph",
+	"version": "1.0",
+	"author": "K, Suwa",
+	"url": "http://mb.metabolomics.jp/wiki/Help:Extension/CreateGraph",
+	"description": "Provide graphing functionality powered by jpgraph",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"ExtensionFunctions": [
+		"CreateGraph::SetupCreateGraph"
+	],
+	"AutoloadClasses": {
+		"CreateGraph": "CreateGraph_body.php"
+	},
+	"Hooks": {
+		"LanguageGetMagic": "CreateGraph::CreateGraphLanguageGetMagic"
+	},
+	"ExtensionMessagesFiles": {
+		"CreateGraphMagic": "CreateGraph.i18n.php"
+	},
+	"MessagesDirs": {
+		"CreateGraph": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

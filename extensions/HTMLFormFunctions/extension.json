@@ -1,0 +1,29 @@
+{
+	"name": "HTMLFormFunctions",
+	"version": "1.0",
+	"author": "K, Suwa",
+	"url": "http://mb.metabolomics.jp/wiki/Help:Extension/HTMLFormFunctins",
+	"description": "Provide HTML form-related functionality",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"ExtensionFunctions": [
+		"HTMLFormFunctions::SetupHTMLFormFunctions"
+	],
+	"AutoloadClasses": {
+		"HTMLFormFunctions": "HTMLFormFunctions_body.php"
+	},
+	"Hooks": {
+		"LanguageGetMagic": "HTMLFormFunctions::HTMLFormLanguageGetMagic"
+	},
+	"ExtensionMessagesFiles": {
+		"HTMLFormFunctionsMagic": "HTMLFormFunctions.i18n.php"
+	},
+	"MessagesDirs": {
+		"HTMLFormFunctions": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}

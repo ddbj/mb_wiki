@@ -1,0 +1,29 @@
+{
+	"name": "ExtendedFunctions",
+	"version": "1.0",
+	"author": "K, Suwa<br>Original code is 'ParserFunctions' written by Tim Starling, etc",
+	"url": "http://metabolomics.jp/wiki/Help:Extension/ExtendedFunctions",
+	"description": "Powerful parser functions",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"ExtensionFunctions": [
+		"ExtendedFunctions::efSetupExFunctions"
+	],
+	"AutoloadClasses": {
+		"ExtendedFunctions": "ExtendedFunctions_body.php"
+	},
+	"Hooks": {
+		"LanguageGetMagic": "ExtendedFunctions::efExFunctionsLanguageGetMagic"
+	},
+	"ExtensionMessagesFiles": {
+		"ExtendedFunctionsMagic": "ExtendedFunctions.i18n.php"
+	},
+	"MessagesDirs": {
+		"ExtendedFunctions": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}
